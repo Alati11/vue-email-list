@@ -5,31 +5,27 @@ createApp({
     data() {
       return {
         message: 'Mail generate:',
-        mail: ''
+        mailList: []
       }
       
     },
     methods: {
         fetchMail() {
-            axios
-                .get('https://flynn.boolean.careers/exercises/api/random/mail')
-                .then((res) => {
-                    console.log(res.data);
-                    const name = res.data.response;
-                    this.mail = name;
 
-                    for(let i= 0; i < 10; i ++) {
-                        const n = i + 1;
-                        console.log(this.mail, i);
-            
-                    }
-                
-                })                       
+            for(let i = 0; i < 10; i++) {
+                axios
+                .get('https://flynn.boolean.careers/exercises/api/random/mail')
+                .then((result)=> {
+                    this.mail = result.data.response;
+                    this.mailList.push(this.mail);
+                });
+            }
+
+                      
         }
     },
     created() {
-        this.fetchMail()
-       
+        this.fetchMail()           
     },
   }).mount('#app')
 
