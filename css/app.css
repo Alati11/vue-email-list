@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#app {
+    background-color: whitesmoke;
+}
+
+.mail-random {
+    width: 800px;
+    height: 90vh;
+    margin: 0 auto;
+    font-size: 30px;
+    padding: 30px;
+}
+
+.title {
+    text-align: center;
+    background-color: lightgray;
+    height: 80px;
+    padding: 25px;
+}

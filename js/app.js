@@ -6,8 +6,7 @@ createApp({
       return {
         message: 'Mail generate:',
         mailList: []
-      }
-      
+      } 
     },
     methods: {
         fetchMail() {
@@ -19,9 +18,7 @@ createApp({
                     this.mail = result.data.response;
                     this.mailList.push(this.mail);
                 });
-            }
-
-                      
+            }               
         }
     },
     created() {
