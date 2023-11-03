@@ -2,9 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* background-image:url('../img/apple.jpeg'); */
+    background-size: cover;
 }
 
+img {
+    max-width: 100%;
+}
+  
 #app {
+  
     background-color: whitesmoke;
 }
 
@@ -13,12 +20,16 @@
     height: 90vh;
     margin: 0 auto;
     font-size: 30px;
-    padding: 30px;
+    padding: 50px;
+    color: black;
+    
 }
 
 .title {
-    text-align: center;
+    color: black;
     background-color: lightgray;
+    text-transform: uppercase;
+    text-align: center;
     height: 80px;
     padding: 25px;
 }
